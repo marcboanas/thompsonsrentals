@@ -1,0 +1,46 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.street_header {
+width: 100%;
+height: auto;
+}
+
+.header-bar {
+width: 100%;
+background: #0060b8;
+text-align: center;
+padding: 5px;
+margin-bottom: 20px;
+}
+
+.small-header-bar {
+background: #ef6c23;
+text-align: center;
+    h3 {
+    color: white !important;
+    }
+}
+
+.panel.main_price {
+background: #0060b8;
+text-align: center;
+color: white;
+    .starting_from {
+    font-size: 2em;
+    }
+    .price_text {
+    font-size: 6em;
+    font-weight: bold;
+    }
+    .per_week {
+    font-size: 1em;
+    color: #e1f6fd;
+    }
+}
+
+.why {
+background: #ef6c23;
+}
