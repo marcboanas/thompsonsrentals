@@ -17,10 +17,10 @@ Thompsonsrentals::Application.routes.draw do
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
-  match 'contact_us' => 'static_pages#contact_us', :as => :contact_us
-  match 'report_a_fault' => 'static_pages#report_a_fault', :as => :report_a_fault
-  match 'terms_and_conditions' => 'static_pages#terms_conditions', :as => :terms_conditions
-  match 'price_guide' => 'static_pages#price_guide', :as => :price_guide
+  get 'contact_us' => 'static_pages#contact_us', :as => :contact_us
+  get 'report_a_fault' => 'static_pages#report_a_fault', :as => :report_a_fault
+  get 'terms_and_conditions' => 'static_pages#terms_conditions', :as => :terms_conditions
+  get 'price_guide' => 'static_pages#price_guide', :as => :price_guide
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
