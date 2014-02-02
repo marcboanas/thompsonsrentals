@@ -13,6 +13,9 @@
 
   <body>
     <%= render 'layouts/header' %>
+    <% if flash[:notice] -%>
+    <p class='notice'><%=h flash[:notice] %></p>
+    <% end %>
     <%= yield %>
     <%= render 'layouts/footer' %>
     <%= javascript_include_tag "application" %>
