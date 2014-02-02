@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
-      @contact = Contact.new
+      @email = Email.new
   end
 
   def about_us

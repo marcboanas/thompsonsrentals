@@ -1,4 +1,6 @@
 Thompsonsrentals::Application.routes.draw do
+  resources :emails
+
   get "static_pages/home"
 
   get "static_pages/contact_us"
