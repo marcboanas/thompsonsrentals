@@ -3,6 +3,6 @@ class Contact < ActionMailer::Base
     
   def contact_form(contact)
       @contact = contact
-      mail( :to => "marcjohnboanas@gmail.com", :subject => "Thompsons Rentals Online Enquiry" )
+      mail( :to => "enquiries@thompsonsrentals.com", :subject => "Thompsons Rentals Online Enquiry" )
   end
 end
