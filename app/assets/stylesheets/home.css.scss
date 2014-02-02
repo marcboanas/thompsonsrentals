@@ -28,19 +28,75 @@ text-align: center;
 background: #0060b8;
 text-align: center;
 color: white;
+height: 294px !important;
     .starting_from {
     font-size: 2em;
     }
     .price_text {
-    font-size: 6em;
+    font-size: 9em;
     font-weight: bold;
     }
     .per_week {
     font-size: 1em;
     color: #e1f6fd;
     }
+    &.show-for-small-only {
+    height: auto !important;
+        .price_text {
+        font-size: 6em;
+        font-weight: bold;
+        }
+    }
 }
 
 .why {
 background: #ef6c23;
+color: white;
+    .why_rent_title {
+    font-size: 2em;
+    font-weight: normal;
+    margin: 0px 0px 20px 0px;
+    }
+    img {
+    margin-right: 10px;
+    }
+}
+
+.how_it_works {
+background: white;
+    img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    div {
+    margin: 0px;
+    padding: 0px;
+    }
+    .panel {
+    background: white;
+    margin: 0px !important;
+    padding: 0px 10px 20px 10px;
+    border: 0px;
+    line-height: 30px;
+    }
+    .how_number {
+    color: white;
+    font-size: 1em;
+    background: #ef6c23;
+    border: 1px solid darken(#ef6c23, 0);
+    border-radius: 50%;
+    height: 27px;
+    line-height: 27px;
+    width: 27px;
+    text-align: center;
+    }
+}
+
+.blue_title_text {
+text-align: center;
+font-weight: bold;
+font-size: 2em;
+margin-bottom: 20px !important;
+color: #8ab4dc;
 }
