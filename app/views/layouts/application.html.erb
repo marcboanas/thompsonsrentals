@@ -13,8 +13,12 @@
 
   <body>
     <%= render 'layouts/header' %>
-    <% if flash[:notice] -%>
+    <% if flash[:notice] %>
+    
+    <div id="myModal" class="reveal-modal" data-reveal>
     <p class='notice'><%=h flash[:notice] %></p>
+    </div>
+    
     <% end %>
     <%= yield %>
     <%= render 'layouts/footer' %>
