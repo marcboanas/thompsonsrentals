@@ -29,7 +29,8 @@ class EmailsController < ApplicationController
     respond_to do |format|
       if @email.save
         Contact.contact_form(@email).deliver
-        format.html { redirect_to root_url, notice: 'Thank You. We will call you soon.' }
+        format.html { redirect_to root_url, notice: 'Thank You. We will be intouch shortly.' }
+        format.js
         format.json { render action: 'show', status: :created, location: @email }
       else
         format.html { render action: 'new' }
