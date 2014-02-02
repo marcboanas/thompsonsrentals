@@ -198,10 +198,14 @@
                         </div>
                     </div>
                 </div>
-                <input type="text" placeholder="Name"/>
-                <input type="text" placeholder="Telephone"/>
-                <textarea rows=4 placeholder="Enter Message Here..."></textarea>
-                <input type="submit" value="send" class="btn_blue"></input>
+                
+                <%= form_for(@contact) do |f| %>
+                <%= f.text_field :name, :placeholder => "Name" %>
+                <%= f.text_field :phone_number, :placeholder => "Telephone" %>
+                <%= f.textarea :message, :placeholder => "Enter Message Here..." %>
+                <%= f.submit "send", :class => "btn_blue" %>
+                <% end %>                
+                
             </div>
             <div class="panel facebook_box show-for-small-up">
             <img src="assets/large_facebook_box.jpg"/>

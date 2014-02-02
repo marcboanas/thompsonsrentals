@@ -17,6 +17,7 @@ Thompsonsrentals::Application.routes.draw do
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
+  get 'about_us' => 'static_pages#about_us', :as => :about_us
   get 'contact_us' => 'static_pages#contact_us', :as => :contact_us
   get 'report_a_fault' => 'static_pages#report_a_fault', :as => :report_a_fault
   get 'terms_and_conditions' => 'static_pages#terms_conditions', :as => :terms_conditions

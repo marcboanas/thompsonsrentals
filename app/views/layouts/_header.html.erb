@@ -3,7 +3,7 @@
 <nav class="top-bar" data-topbar>
   <ul class="title-area">
     <li class="name">
-      <h1><a class="show-for-medium-up" href="#">Thompsons Rentals</a></h1>
+      <h1><%= link_to "Thompsons Rentals", root_url, :class => "show-for-medium-up" %></h1>
     </li>
     <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
   </ul>
@@ -11,13 +11,13 @@
   <section class="top-bar-section">
     <!-- Right Nav Section -->
     <ul class="right">
-        <li class="active"><a href="#">About Us</a></li>
+        <li class="active"><%= link_to "About Us", about_us_url %></li>
       <li class="has-dropdown">
-        <a href="#">Price Guide</a>
+        <%= link_to "Price Guide", price_guide_url %>
         <ul class="dropdown">
-          <li><a href="#">Washers Price Guide</a></li>
-          <li><a href="#">Dryers Price Guide</a></li>
-          <li><a href="#">Dishwashers Price Guide</a></li>
+          <li><%= link_to "Washers Price Guide", price_guide_url(:appliance => "Washer") %></li>
+          <li><%= link_to "Dryers Price Guide", price_guide_url(:appliance => "Dryer") %></li>
+          <li><%= link_to "Dishwashers Price Guide", price_guide_url(:appliance => "Dishwasher") %></li>
         </ul>
       </li>
       <li class="has-dropdown">
@@ -25,14 +25,14 @@
         <ul class="dropdown">
           <li><a href="#">Tel: 01642 788123</a></li>
           <li><a href="#">Mobile: 07825 407 607</a></li>
-          <li><a href="#">Email: enquiries@thompsonsrentals.co.uk</a></li>
+          <li><%= mail_to "Email: enquiries@thompsonsrentals.co.uk", "enquiries@thompsonsrentals.co.uk" %></li>
         </ul>
       </li>
       <li class="has-dropdown">
         <a href="#">Leave Feedback</a>
         <ul class="dropdown">
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
+          <li><%= link_to "Facebook", "http://www.facebook.com/pages/Thompsons-Rentals/138551539564593" %></li>
+          <li><%= link_to "Twitter", "http://www.twitter.com" %></li>
         </ul>
       </li>
     </ul>
