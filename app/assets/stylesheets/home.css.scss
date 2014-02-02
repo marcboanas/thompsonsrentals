@@ -99,4 +99,54 @@ font-weight: bold;
 font-size: 2em;
 margin-bottom: 20px !important;
 color: #8ab4dc;
+    &.align_left {
+    text-align: left !important;
+    font-size: 1em;
+    }
+}
+
+.orange_text_right {
+text-align: left !important;
+color: #ef6c23;
+font-size: 1em !important;
+font-weight: bold;
+margin-bottom: 20px !important;
+}
+
+.panel.contact_us {
+background: white;
+}
+
+textarea {
+min-height: 100px;
+width: 100% !important;
+}
+
+.btn_blue {
+font-size: 0.9em;
+color: white;
+background: #0060b8;
+border-radius: 5px;
+border: 1px solid darken(#0060b8, 5);
+cursor: pointer;
+    &:hover {
+    color: #8ab4dc; 
+    }
+}
+
+.panel.facebook_box {
+background: none;
+border: 0px;
+padding: 0px;
+    img {
+    margin: 0 auto;
+    display: block;
+    }
+}
+
+.footer_wrapper {
+width: 100%;
+background: #0060b8;
+padding-top: 20px;
+color: white;
 }
