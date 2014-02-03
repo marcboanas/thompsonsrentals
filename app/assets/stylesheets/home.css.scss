@@ -35,6 +35,7 @@ height: 294px !important;
     .price_text {
     font-size: 9em;
     font-weight: bold;
+    line-height: 1.4em;
     }
     .per_week {
     font-size: 1em;
@@ -127,10 +128,11 @@ font-size: 0.9em;
 color: white;
 background: #0060b8;
 border-radius: 5px;
-border: 1px solid darken(#0060b8, 5);
+border: 2px solid darken(#0060b8, 5);
 cursor: pointer;
     &:hover {
-    color: #8ab4dc; 
+    border: 2px solid #8ab4dc;
+    background: #ef6c23;
     }
 }
 

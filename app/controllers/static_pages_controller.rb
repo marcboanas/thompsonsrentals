@@ -1,6 +1,12 @@
 class StaticPagesController < ApplicationController
-  def home
+    
+  before_filter :new_email, :only => [:home, :about_us, :report_a_fault, :price_guide]
+    
+  def new_email
       @email = Email.new
+  end
+    
+  def home
   end
 
   def about_us
