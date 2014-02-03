@@ -2,6 +2,7 @@
 background: white;
 height: 1005px;
     &.small_screen {
+    height: auto !important;
     min-height: 400px !important;
     }
 }
